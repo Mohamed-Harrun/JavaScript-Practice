@@ -1,0 +1,22 @@
+[
+    {
+    "name": "spongeboob",
+    "age" : 30,
+    "isEmployeed" : true
+    },
+    {
+    "name": "patrick",
+    "age" : 34,
+    "isEmployeed" : false
+    },
+    {
+    "name": "squidward",
+    "age" : 50,
+    "isEmployeed" : true
+    },
+    {
+    "name": "sandy",
+    "age" : 27,
+    "isEmployeed" : false
+    }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Show Element</title>
+    <style>
+        #myBtn{
+            font-weight: bold;
+            font-size: 3rem;
+            /* display: block; */
+            margin: 20px;
+            border: none;
+            background-color: hsl(180, 100%, 30%);
+            color: hsl(0, 0%, 10%);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./assets/1.png" alt="Image" id="myImg"><br>
+    <button id="myBtn">Hide</button>
+    <script>
+        let myImg = document.getElementById("myImg");
+        let myBtn = document.getElementById("myBtn");
+        myBtn.addEventListener("click", ()=>{
+            
+            if (myImg.style.visibility === "" || myImg.style.visibility === "visible" ) 
+            {
+                myImg.style.visibility = "hidden"; 
+                myBtn.textContent = "Show"   
+            } else{
+                myImg.style.visibility = "visible";    
+                myBtn.textContent = "Hide";
+            }
+            // myImg.style.display = "none";
+            // myImg.style.display = "block";
+        })
+    </script>
+</body>
+</html>

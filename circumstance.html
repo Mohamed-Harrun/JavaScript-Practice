@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the value</h1>
+    <input id="inp"><br><br>
+    <button id="mybtn">submit</button>
+    <h3 id="res"></h3>
+    <script>
+        document.getElementById("mybtn").onclick = function(){
+            const pi = 3.14;
+            let radius = document.getElementById("inp").value;
+            radius=Number(radius);
+            let circumstance =2*pi*radius;
+            document.getElementById("res").textContent=circumstance;
+
+        }
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the value</h1>
+    <input id="inp"><br><br>
+    <button id="mybtn">Submit</button>
+    <h3 id="res"></h3>
+    <script>
+        document.getElementById("mybtn").onclick = function(){
+            const pi = 3.14;
+            let radius = document.getElementById("inp").value;
+            radius = Number(radius);
+            let circumference = 2 * pi * radius; // Corrected here
+            document.getElementById("res").textContent = circumference;
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+#container{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+button{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(210, 100%, 50%);
+    cursor: pointer;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    background-color: hsl(210, 100%, 60%);
+}
+button:active{
+    background-color: hsl(210, 100%, 70%);
+}
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}

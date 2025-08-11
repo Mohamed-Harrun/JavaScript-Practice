@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Roll">Roll</button>
+    <label id="res"></label>
+    <script>
+            let roll = document.getElementById("Roll")
+            roll.onclick = function(){
+                let rn = Math.floor((Math.random()*6)+1);
+                let res = document.getElementById("res");
+                res.textContent = rn;
+            }
+
+            
+            // randomnum = res.textContent;
+            
+    </script>
+</body>
+</html>
+<!-- document.getElementById("Roll").onclick = function(){
+    let randomnum = Math.floor( Math.random()*6)+1;
+    let res = document.getElementById("res");
+    res.textContent = randomnum; -->

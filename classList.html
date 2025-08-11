@@ -1,0 +1,44 @@
+<!-- 
+Class list  = Element property in javascript used to iteract with an element's list of classes 
+              (CSS Classes) allows to make reusable classes for many elements across your webpage.
+
+
+              add()
+              remove()
+              toggle(remove if present, add if not)
+              replace(old class, new class)
+              contains()
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class list</title>
+    <style>
+        button{
+            border: none;
+            font-size: 4rem;
+            cursor: pointer;
+        }
+        .enabled{
+            background-color: blue;
+        }
+        .hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button id="mybutton">My Button</button>
+    <script>
+        const mybutton = document.getElementById("mybutton");
+        mybutton.classList.add("enabled");
+        mybutton.classList.remove("enabled");
+        mybutton.addEventListener("mouseover",(event)=>{
+            event.target.classList.toggle("hover");
+        })
+    </script>
+</body>
+</html>

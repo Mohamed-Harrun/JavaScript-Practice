@@ -1,0 +1,6 @@
+{
+    "name": "spongeboob",
+    "age" : 30,
+    "isEmployeed" : true,
+    "hoobies" : ["jellyfishing", "karate", "cooking"]
+}

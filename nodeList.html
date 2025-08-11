@@ -1,0 +1,70 @@
+<!-- 
+static collection of HTML elements by (ID, Class, Element) can be created by using QuerySelectorAll().
+similar to an array, but no (map,filter,reduce) *it has built in for each method*
+node list won't update automatically reflect changes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* button{
+            font-weight: bold;
+            font-size: 5rem;
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            border-radius: 20px;
+            border: none;
+            background-color: hsl(178, 100%, 50%);
+            color: black;
+        } */
+    </style>
+</head>
+<body>
+    <button class="btn">Click</button>
+    <button class="btn">Click</button>
+    <button class="btn">Click</button>
+    <button class="btn">Click</button>
+    <script>
+        let btn = document.querySelectorAll("button");
+         btn.forEach((bttn)=>{
+         bttn.style.backgroundColor = "blue";  
+         })
+        // adding event listener
+        btn.forEach(bttn =>{
+            bttn.addEventListener("click",(event)=>{
+                event.target.style.backgroundColor = "tomato";
+            })
+        })
+        
+        btn.forEach(bttn=>{
+            bttn.addEventListener("mouseover",(event)=>{
+                event.target.style.backgroundColor = "white";
+            })
+        })
+        
+        // adding an element in the node list
+
+        const newButton = document.createElement("button");
+
+        newButton.textContent ="Button 5";
+        newButton.classList = "btn";
+        document.body.appendChild(newButton);
+
+         btn = document.querySelectorAll(".btn")
+         console.log(btn)
+
+
+         btn.forEach(bttn=>{
+            bttn.addEventListener("mouseout",(event)=>{
+                event.target.style.backgroundColor = "blue";
+            })
+        })
+
+    </script>
+</body>
+</html>

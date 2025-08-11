@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+        }
+        #mySubmit{
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="myCheckBox">
+    <label for="myCheckBox">Subscribe</label><br><br>
+    <input type="radio" id="visaBtn" name="button">
+    <label for="visaBtn">Visa</label><br>
+    <input type="radio" id="masterCardBtn" name="button">
+    <label for="masterCardBtn">Mastercard</label><br>
+    <input type="radio" id="payPalBtn" name="button">
+    <label for="payPalBtn">Paypal</label><br><br>
+    <button value="submit" id="mySubmit">Submit</button>
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+    <script>
+        const myCheckBox =document.getElementById("myCheckBox")
+        const visaBtn = document.getElementById("visaBtn")
+        const masterCardBtn = document.getElementById("masterCardBtn")
+        const payPalBtn = document.getElementById("payPalBtn")
+        const mySubmit = document.getElementById("mySubmit")
+        const subResult = document.getElementById("subResult")
+        const paymentResult = document.getElementById("paymentResult")
+        mySubmit.onclick = function(){
+            if (myCheckBox.checked) {
+                subResult.textContent = "You're subscribed"
+            } else {
+                subResult.textContent = "You're not subscribed"
+            }
+            if (masterCardBtn.checked) {
+                paymentResult.textContent = "You're paying with MasterCard"
+                
+            }
+            else if (payPalBtn.checked) {
+                paymentResult.textContent = "You're paying with Paypal"
+            }
+            else if (visaBtn.checked) {
+                paymentResult.textContent = "You're paying with Visa"
+            }
+            else {
+             paymentResult.textContent = "You doesn't select any payment mode"   
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- 
+8.30
+3.00-4.50
+5.30-6.30
+7-8
+9-10
+
+-->

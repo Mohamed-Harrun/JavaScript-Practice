@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid black;
+            margin: 10px;
+        }
+        p{
+            font-size: 4rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="hi">Div 1</p>
+    </div>
+    <div>
+        <p>Div 2</p>
+    </div>
+    <script>
+        // create a new element
+        const newH1 = document.createElement("p")
+
+        // add attributes or properties to the element.
+
+        newH1.textContent = "Hi, Harrun";
+
+        // append or prepend the element
+
+        const hi = document.getElementById("hi");
+        hi.append(newH1)
+    </script>
+</body>
+</html>
